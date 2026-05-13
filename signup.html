@@ -39,18 +39,19 @@
 
 <body>
 
+    <div class="auth-toggles">
+        <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+        <button id="rtl-toggle" class="rtl-toggle" title="Toggle RTL">
+            <span>RTL</span>
+        </button>
+    </div>
+
     <div class="auth-container">
         <div class="auth-card">
             <div class="text-center mb-5">
-                <div class="auth-toggles">
-                    <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                    </button>
-                    <button id="rtl-toggle" class="rtl-toggle" title="Toggle RTL">
-                        <span>RTL</span>
-                    </button>
-                </div>
                 <a href="index.html" class="footer-logo">
                     <img src="assets/images/logo.png" alt="SweetNest Logo">
                 </a>
@@ -58,27 +59,31 @@
                 <p class="text-muted">Create an account to start planning your event</p>
             </div>
             <form>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <label class="form-label">First Name</label>
-                        <input type="text" class="form-control" placeholder="Jane">
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <label class="form-label">Last Name</label>
-                        <input type="text" class="form-control" placeholder="Doe">
-                    </div>
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" id="firstname" placeholder="Jane">
+                    <label for="firstname">First Name</label>
                 </div>
-                <div class="mb-4">
-                    <label class="form-label">Email Address</label>
-                    <input type="email" class="form-control" placeholder="jane@example.com">
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" id="lastname" placeholder="Doe">
+                    <label for="lastname">Last Name</label>
                 </div>
-                <div class="mb-4">
-                    <label class="form-label">Password</label>
-                    <input type="password" class="form-control" placeholder="••••••••">
+                <div class="form-floating mb-4">
+                    <input type="email" class="form-control" id="email" placeholder="jane@example.com">
+                    <label for="email">Email Address</label>
                 </div>
-                <div class="mb-4">
-                    <label class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" placeholder="••••••••">
+                <div class="form-floating mb-4 password-field-container">
+                    <input type="password" class="form-control" id="password" placeholder="••••••••">
+                    <label for="password">Password</label>
+                    <button type="button" class="password-toggle" id="togglePassword">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div class="form-floating mb-4 password-field-container">
+                    <input type="password" class="form-control" id="confirm_password" placeholder="••••••••">
+                    <label for="confirm_password">Confirm Password</label>
+                    <button type="button" class="password-toggle" id="toggleConfirmPassword">
+                        <i class="fas fa-eye"></i>
+                    </button>
                 </div>
                 <div class="form-check mb-4">
                     <input type="checkbox" class="form-check-input" id="terms" required>
