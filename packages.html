@@ -69,13 +69,18 @@
             z-index: 1;
         }
     </style>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
+
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">SweetNest</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="SweetNest Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -260,7 +265,9 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="luxury-card overflow-hidden">
-                        <img src="assets/images/gallery-5.jpg" alt="Sweet Start Example" class="img-fluid">
+                        <div class="luxury-card-img">
+                            <img src="assets/images/gallery-5.jpg" alt="Sweet Start Example" class="img-fluid">
+                        </div>
                         <div class="p-3 text-center">
                             <h6>The Sweet Start</h6>
                         </div>
@@ -268,7 +275,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="luxury-card overflow-hidden border-primary-pink">
-                        <img src="assets/images/service-dessert.jpg" alt="Sweeter Soiree Example" class="img-fluid">
+                        <div class="luxury-card-img">
+                            <img src="assets/images/service-dessert.jpg" alt="Sweeter Soiree Example" class="img-fluid">
+                        </div>
                         <div class="p-3 text-center">
                             <h6>The Sweeter Soirée</h6>
                         </div>
@@ -276,7 +285,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="luxury-card overflow-hidden">
-                        <img src="assets/images/service-wedding.jpg" alt="Sweetest Luxury Example" class="img-fluid">
+                        <div class="luxury-card-img">
+                            <img src="assets/images/service-wedding.jpg" alt="Sweetest Luxury Example" class="img-fluid">
+                        </div>
                         <div class="p-3 text-center">
                             <h6>The Sweetest Luxury</h6>
                         </div>
@@ -291,7 +302,9 @@
         <div class="container">
             <div class="row g-4 justify-content-between">
                 <div class="col-lg-3">
-                    <a href="index.html" class="footer-logo">SweetNest</a>
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/images/logo.png" alt="SweetNest Logo">
+                    </a>
                     <p>Luxury Candy Buffets & Dessert Tables for Every Celebration.</p>
                     <div class="social-links d-flex gap-2 mt-3">
                         <a href="#" class="text-primary-pink"><i class="fab fa-instagram"></i></a>
