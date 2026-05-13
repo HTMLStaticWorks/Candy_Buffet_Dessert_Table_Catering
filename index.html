@@ -36,6 +36,17 @@
                     <li class="nav-item ms-lg-3">
                         <a href="login.html" class="btn-luxury">Login</a>
                     </li>
+                    <li class="nav-item">
+                        <div class="toggle-group">
+                            <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button id="rtl-toggle" class="rtl-toggle" title="Toggle RTL">
+                                <span>RTL</span>
+                            </button>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -101,8 +112,59 @@
         </div>
     </section>
 
+    <!-- Signature Packages Preview -->
+    <section class="packages-preview bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">Curated Party Packages</h2>
+                <p class="lead">From intimate gatherings to grand celebrations, we have the perfect fit.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="luxury-card p-4 h-100 text-center">
+                        <h4 class="text-primary-pink">The Sweet Start</h4>
+                        <p class="price display-6 fw-bold">$499</p>
+                        <p class="text-muted">Up to 30 Guests</p>
+                        <ul class="list-unstyled mb-4">
+                            <li>6 Candy Varieties</li>
+                            <li>Luxury Glassware</li>
+                            <li>Custom Labels</li>
+                        </ul>
+                        <a href="packages.html" class="btn-luxury-outline w-100">View Details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="luxury-card p-4 h-100 text-center border-primary-pink">
+                        <h4 class="text-primary-pink">The Sweeter Soirée</h4>
+                        <p class="price display-6 fw-bold">$899</p>
+                        <p class="text-muted">Up to 75 Guests</p>
+                        <ul class="list-unstyled mb-4">
+                            <li>10 Candy Varieties</li>
+                            <li>Artisan Desserts</li>
+                            <li>Themed Backdrop</li>
+                        </ul>
+                        <a href="packages.html" class="btn-luxury w-100">Most Popular</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="luxury-card p-4 h-100 text-center">
+                        <h4 class="text-primary-pink">The Sweetest Luxury</h4>
+                        <p class="price display-6 fw-bold">$1,499</p>
+                        <p class="text-muted">Up to 150 Guests</p>
+                        <ul class="list-unstyled mb-4">
+                            <li>15 Candy Varieties</li>
+                            <li>6 Artisan Desserts</li>
+                            <li>Professional Attendant</li>
+                        </ul>
+                        <a href="packages.html" class="btn-luxury-outline w-100">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Themes Carousel -->
-    <section class="themes bg-light">
+    <section class="themes">
         <div class="container">
             <div class="row align-items-center mb-5">
                 <div class="col-md-8">
@@ -151,11 +213,37 @@
         </div>
     </section>
 
+    <!-- Recent Gallery Peek -->
+    <section class="gallery-peek bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-8">
+                    <h2 class="display-5">Gallery Inspiration</h2>
+                    <p class="lead">Explore our most recent setups and dream up your own.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="gallery.html" class="btn-luxury">Full Gallery</a>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&q=80&w=600" alt="Gallery 1" class="img-fluid rounded-4 shadow-sm">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=600" alt="Gallery 2" class="img-fluid rounded-4 shadow-sm">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&q=80&w=600" alt="Gallery 3" class="img-fluid rounded-4 shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Booking CTA -->
-    <section class="cta-section text-center py-5" style="background-color: var(--primary-pink); color: white;">
+    <section class="cta-section text-center py-5" style="background-color: var(--primary-pink); color: #FFFFFF;">
         <div class="container py-5">
             <h2 class="display-4 text-white mb-4">Ready to sweeten your event?</h2>
-            <p class="lead mb-5">Book your date now and let us handle the magic.</p>
+            <p class="lead mb-5" style="color: rgba(255, 255, 255, 0.9);">Book your date now and let us handle the magic.</p>
             <a href="contact.html" class="btn btn-light btn-lg rounded-pill px-5 py-3 fw-bold" style="color: var(--primary-pink);">Request a Quote</a>
         </div>
     </section>
@@ -190,6 +278,63 @@
                         </div>
                         <p class="fst-italic">"Professional, elegant, and stress-free. SweetNest handled everything from setup to cleanup perfectly."</p>
                         <h5 class="mt-3">— Corporate Event Planner</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="process-section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">How It Works</h2>
+                <p class="lead">Three simple steps to your dream dessert display</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="process-step">
+                        <div class="step-number mb-4 mx-auto d-flex align-items-center justify-content-center bg-primary-pink text-white rounded-circle" style="width: 60px; height: 60px; font-size: 1.5rem; background-color: var(--primary-pink);">1</div>
+                        <h3>Consultation</h3>
+                        <p class="text-muted">We discuss your theme, color palette, and favorite treats to create a custom concept.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-step">
+                        <div class="step-number mb-4 mx-auto d-flex align-items-center justify-content-center bg-primary-pink text-white rounded-circle" style="width: 60px; height: 60px; font-size: 1.5rem; background-color: var(--primary-pink);">2</div>
+                        <h3>Design & Sourcing</h3>
+                        <p class="text-muted">Our stylists source premium candies and design custom labels and decor for your table.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-step">
+                        <div class="step-number mb-4 mx-auto d-flex align-items-center justify-content-center bg-primary-pink text-white rounded-circle" style="width: 60px; height: 60px; font-size: 1.5rem; background-color: var(--primary-pink);">3</div>
+                        <h3>Setup & Enjoy</h3>
+                        <p class="text-muted">We arrive early to set up everything perfectly, then return later to handle the cleanup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="luxury-card p-5 text-center" style="background: linear-gradient(135deg, var(--soft-pink) 0%, #ffffff 100%); border: 1px solid var(--primary-pink);">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <i class="fas fa-paper-plane fa-3x text-primary-pink mb-4"></i>
+                        <h2 class="mb-3">Stay Sweet!</h2>
+                        <p class="lead mb-4">Subscribe to our newsletter for event inspiration, theme ideas, and exclusive offers.</p>
+                        <form class="row g-3 justify-content-center">
+                            <div class="col-md-8">
+                                <input type="email" class="form-control rounded-pill px-4" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn-luxury w-100">Subscribe</button>
+                            </div>
+                        </form>
+                        <p class="small text-muted mt-3">We respect your privacy. Unsubscribe at any time.</p>
                     </div>
                 </div>
             </div>

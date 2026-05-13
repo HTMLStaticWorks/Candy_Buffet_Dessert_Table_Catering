@@ -21,7 +21,7 @@
             overflow: hidden;
             transition: var(--transition);
             box-shadow: var(--shadow-soft);
-            background-color: white;
+            background-color: var(--card-bg);
             position: relative;
         }
         .package-card:hover {
@@ -41,6 +41,7 @@
         }
         .package-body {
             padding: 40px 30px;
+            background-color: var(--card-bg);
         }
         .popular-badge {
             position: absolute;
@@ -53,6 +54,7 @@
             font-size: 0.8rem;
             font-weight: bold;
             text-transform: uppercase;
+            z-index: 1;
         }
     </style>
 </head>
@@ -76,6 +78,17 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Book-US</a></li>
                     <li class="nav-item ms-lg-3">
                         <a href="login.html" class="btn-luxury">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="toggle-group">
+                            <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                            </button>
+                            <button id="rtl-toggle" class="rtl-toggle" title="Toggle RTL">
+                                <span>RTL</span>
+                            </button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -173,6 +186,91 @@
             <h2 class="mb-4">Need a Custom Package?</h2>
             <p class="lead mb-5">We can create a bespoke experience for events of any size, from 10 to 1,000+ guests.</p>
             <a href="contact.html" class="btn-luxury">Request a Custom Quote</a>
+        </div>
+    </section>
+
+    <!-- Complementary Services -->
+    <section class="complementary-services py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">Package Add-ons</h2>
+                <p class="lead">Enhance your package with these sweet extras.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="luxury-card p-4 text-center h-100">
+                        <i class="fas fa-camera fa-2x text-primary-pink mb-3"></i>
+                        <h5>Photo Booth</h5>
+                        <p class="small">Capture the fun with a themed backdrop and props.</p>
+                        <p class="text-primary-pink fw-bold">From $200</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="luxury-card p-4 text-center h-100">
+                        <i class="fas fa-utensils fa-2x text-primary-pink mb-3"></i>
+                        <h5>Personalized Sweets</h5>
+                        <p class="small">Custom cookies and treats with your name or logo.</p>
+                        <p class="text-primary-pink fw-bold">From $150</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="luxury-card p-4 text-center h-100">
+                        <i class="fas fa-wine-glass-alt fa-2x text-primary-pink mb-3"></i>
+                        <h5>Drink Station</h5>
+                        <p class="small">Mocktails or themed drinks to match your table.</p>
+                        <p class="text-primary-pink fw-bold">From $250</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="luxury-card p-4 text-center h-100">
+                        <i class="fas fa-clock fa-2x text-primary-pink mb-3"></i>
+                        <h5>Extended Rental</h5>
+                        <p class="small">Keep the table open for longer celebrations.</p>
+                        <p class="text-primary-pink fw-bold">From $100/hr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Examples Gallery -->
+    <section class="package-gallery py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-8">
+                    <h2 class="display-5">Real Package Examples</h2>
+                    <p class="lead">See what our different package tiers look like in reality.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="gallery.html" class="btn-luxury-outline">Full Gallery</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="luxury-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&q=80&w=600" alt="Sweet Start Example" class="img-fluid">
+                        <div class="p-3 text-center">
+                            <h6>The Sweet Start</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="luxury-card overflow-hidden border-primary-pink">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=80&w=600" alt="Sweeter Soiree Example" class="img-fluid">
+                        <div class="p-3 text-center">
+                            <h6>The Sweeter Soirée</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="luxury-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=600" alt="Sweetest Luxury Example" class="img-fluid">
+                        <div class="p-3 text-center">
+                            <h6>The Sweetest Luxury</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

@@ -5,6 +5,34 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Theme & RTL Logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const rtlToggle = document.getElementById('rtl-toggle');
+    const html = document.documentElement;
+
+    // Load saved settings
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    const currentDir = localStorage.getItem('dir') || 'ltr';
+
+    html.setAttribute('data-theme', currentTheme);
+    html.setAttribute('dir', currentDir);
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    }
+
+    if (rtlToggle) {
+        rtlToggle.addEventListener('click', () => {
+            const newDir = html.getAttribute('dir') === 'ltr' ? 'rtl' : 'ltr';
+            html.setAttribute('dir', newDir);
+            localStorage.setItem('dir', newDir);
+        });
+    }
+
     // 1. Sticky Navbar on Scroll
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
