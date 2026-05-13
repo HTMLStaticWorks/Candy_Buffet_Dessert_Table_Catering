@@ -303,10 +303,11 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(255, 253, 208, 0.4), rgba(248, 200, 220, 0.4)), url('../images/hero-bg.jpg');
+    background: linear-gradient(rgba(255, 253, 208, 0.4), rgba(248, 200, 220, 0.4)), url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-content h1 {
@@ -318,6 +319,14 @@ body {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: var(--text-muted);
+}
+
+.hero-img-main {
+    max-height: 75vh;
+    width: auto;
+    object-fit: contain;
+    margin-left: auto;
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -334,6 +343,9 @@ body {
     transition: var(--transition);
     box-shadow: var(--shadow-soft);
     background-color: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .luxury-card:hover {
@@ -341,11 +353,33 @@ body {
     box-shadow: var(--shadow-hover);
 }
 
-.luxury-card img {
+.luxury-card .card-body,
+.luxury-card.p-4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start; /* Start from top, but push button to bottom */
+}
+
+/* Ensure buttons/links at the bottom of the card are pushed down */
+.luxury-card .btn-luxury,
+.luxury-card .btn-luxury-outline,
+.luxury-card .text-gold {
+    margin-top: auto;
+}
+
+.luxury-card img,
+.luxury-card .card-img-top {
+    height: 240px; /* Consistent height for all card images */
+    object-fit: cover;
+    width: 100%;
     transition: var(--transition);
 }
 
-.luxury-card:hover img {
+.luxury-card:hover img,
+.luxury-card:hover .card-img-top {
     transform: scale(1.1);
 }
 
@@ -358,6 +392,49 @@ body {
 
 .floating-candy {
     animation: float 6s ease-in-out infinite;
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: var(--shadow-soft);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Universal Gallery/Highlight Image Styles */
+.gallery-peek img,
+.gallery-highlights img,
+.featured-gallery img,
+.gallery-card img {
+    height: 380px; /* Increased height to fill space better */
+    width: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+    border-radius: 20px; /* Ensure uniform rounded corners */
+}
+
+.gallery-peek img:hover,
+.gallery-highlights img:hover,
+.featured-gallery img:hover,
+.gallery-card img:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-hover);
+}
+
+.stylist-img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Theme & RTL Toggles */

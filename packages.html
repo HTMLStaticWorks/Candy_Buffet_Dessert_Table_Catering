@@ -23,6 +23,9 @@
             box-shadow: var(--shadow-soft);
             background-color: var(--card-bg);
             position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         .package-card:hover {
             transform: translateY(-10px);
@@ -42,6 +45,15 @@
         .package-body {
             padding: 40px 30px;
             background-color: var(--card-bg);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .package-body .btn-luxury,
+        .package-body .btn-luxury-outline {
+            margin-top: auto;
         }
         .popular-badge {
             position: absolute;
@@ -248,7 +260,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="luxury-card overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&q=80&w=600" alt="Sweet Start Example" class="img-fluid">
+                        <img src="assets/images/gallery-5.jpg" alt="Sweet Start Example" class="img-fluid">
                         <div class="p-3 text-center">
                             <h6>The Sweet Start</h6>
                         </div>
@@ -256,7 +268,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="luxury-card overflow-hidden border-primary-pink">
-                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=80&w=600" alt="Sweeter Soiree Example" class="img-fluid">
+                        <img src="assets/images/service-dessert.jpg" alt="Sweeter Soiree Example" class="img-fluid">
                         <div class="p-3 text-center">
                             <h6>The Sweeter Soirée</h6>
                         </div>
@@ -264,7 +276,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="luxury-card overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=600" alt="Sweetest Luxury Example" class="img-fluid">
+                        <img src="assets/images/service-wedding.jpg" alt="Sweetest Luxury Example" class="img-fluid">
                         <div class="p-3 text-center">
                             <h6>The Sweetest Luxury</h6>
                         </div>
