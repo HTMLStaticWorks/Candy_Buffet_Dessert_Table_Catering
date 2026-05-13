@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Packages | SweetNest - Pricing & Details</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .package-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow-soft);
+            background-color: white;
+            position: relative;
+        }
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        .package-header {
+            background-color: var(--soft-pink);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .package-price {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            color: var(--primary-pink);
+            margin-bottom: 0;
+        }
+        .package-body {
+            padding: 40px 30px;
+        }
+        .popular-badge {
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background-color: var(--gold);
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SweetNest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Book-US</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="login.html" class="btn-luxury">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-color: var(--primary-pink); margin-top: 0;">
+        <div class="container text-center py-5 text-white">
+            <h1 class="display-3 text-white">Party Packages</h1>
+            <p class="lead">Curated collections to fit every celebration size and budget.</p>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <!-- Package 1 -->
+                <div class="col-lg-4">
+                    <div class="package-card h-100">
+                        <div class="package-header">
+                            <h3>The Sweet Start</h3>
+                            <p class="text-muted">Perfect for small gatherings</p>
+                            <p class="package-price">$499</p>
+                            <p class="small text-muted">Up to 30 Guests</p>
+                        </div>
+                        <div class="package-body">
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 6 Varieties of Premium Candy</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Rental of Luxury Glassware</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Themed Linen & Decor</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Custom Candy Labels</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Delivery, Setup & Cleanup</li>
+                                <li class="mb-3 text-muted"><del>Artisan Petite Desserts</del></li>
+                            </ul>
+                            <a href="contact.html" class="btn-luxury-outline w-100">Select Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="col-lg-4">
+                    <div class="package-card h-100 border border-primary-pink">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="package-header" style="background-color: var(--primary-pink); color: white;">
+                            <h3 class="text-white">The Sweeter Soirée</h3>
+                            <p class="text-white-50">Our most popular choice</p>
+                            <p class="package-price text-white">$899</p>
+                            <p class="small text-white-50">Up to 75 Guests</p>
+                        </div>
+                        <div class="package-body">
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 10 Varieties of Premium Candy</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 3 Types of Artisan Desserts</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Custom Themed Backdrop</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Floral Table Arrangements</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Menu Signage & Decor</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Delivery, Setup & Cleanup</li>
+                            </ul>
+                            <a href="contact.html" class="btn-luxury w-100">Select Package</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="col-lg-4">
+                    <div class="package-card h-100">
+                        <div class="package-header">
+                            <h3>The Sweetest Luxury</h3>
+                            <p class="text-muted">The ultimate dessert experience</p>
+                            <p class="package-price">$1,499</p>
+                            <p class="small text-muted">Up to 150 Guests</p>
+                        </div>
+                        <div class="package-body">
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 15 Varieties of Premium Candy</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 6 Types of Artisan Desserts</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Premium Personalized Props</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Professional Table Attendant</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Take-home Favor Boxes</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Priority Delivery & Setup</li>
+                            </ul>
+                            <a href="contact.html" class="btn-luxury-outline w-100">Select Package</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Quote -->
+    <section class="py-5 bg-light">
+        <div class="container text-center py-5">
+            <h2 class="mb-4">Need a Custom Package?</h2>
+            <p class="lead mb-5">We can create a bespoke experience for events of any size, from 10 to 1,000+ guests.</p>
+            <a href="contact.html" class="btn-luxury">Request a Custom Quote</a>
+        </div>
+    </section>
+
+    <!-- Compact Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-3">
+                    <a href="index.html" class="footer-logo">SweetNest</a>
+                    <p>Luxury Candy Buffets & Dessert Tables for Every Celebration.</p>
+                    <div class="social-links d-flex gap-2 mt-3">
+                        <a href="#" class="text-primary-pink"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-primary-pink"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-primary-pink"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Events</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="themes.html">Themes</a></li>
+                        <li><a href="contact.html">Book-US</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contact</h5>
+                    <p><i class="fas fa-envelope me-2 text-primary-pink"></i> hello@sweetnest.com</p>
+                    <p><i class="fas fa-phone me-2 text-primary-pink"></i> +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0 small text-muted">&copy; 2026 SweetNest. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

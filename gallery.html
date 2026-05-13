@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | SweetNest - Luxury Dessert Table Inspiration</title>
+    <meta name="description" content="Explore our gallery of luxury candy buffets, dessert tables, and themed setups for weddings, birthdays, and special events.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .gallery-filter {
+            margin-bottom: 50px;
+        }
+        .filter-btn {
+            background: none;
+            border: 2px solid var(--primary-pink);
+            color: var(--primary-pink);
+            padding: 8px 25px;
+            border-radius: 50px;
+            margin: 5px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--primary-pink);
+            color: white;
+        }
+        .gallery-item {
+            margin-bottom: 30px;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-img-wrapper {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .gallery-img-wrapper img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-img-wrapper:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(248, 200, 220, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-img-wrapper:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-overlay i {
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SweetNest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Book-US</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="login.html" class="btn-luxury">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-color: var(--soft-pink); margin-top: 0;">
+        <div class="container text-center py-5">
+            <h1 class="display-3">Our Sweet Gallery</h1>
+            <p class="lead">Inspiration for your next unforgettable celebration</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="row justify-content-center gallery-filter">
+                <div class="col-12 text-center">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="weddings">Weddings</button>
+                    <button class="filter-btn" data-filter="birthdays">Birthdays</button>
+                    <button class="filter-btn" data-filter="baby-showers">Baby Showers</button>
+                    <button class="filter-btn" data-filter="corporate">Corporate</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row" id="gallery-grid">
+                <!-- Wedding 1 -->
+                <div class="col-md-4 gallery-item weddings">
+                    <div class="gallery-img-wrapper" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=600" alt="Wedding Dessert Table" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Birthday 1 -->
+                <div class="col-md-4 gallery-item birthdays">
+                    <div class="gallery-img-wrapper" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=80&w=800">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=80&w=600" alt="Birthday Candy Buffet" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Baby Shower 1 -->
+                <div class="col-md-4 gallery-item baby-showers">
+                    <div class="gallery-img-wrapper" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80&w=800">
+                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80&w=600" alt="Baby Shower Treats" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Corporate 1 -->
+                <div class="col-md-4 gallery-item corporate">
+                    <div class="gallery-img-wrapper" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://images.unsplash.com/photo-1530103862676-fa8c91bbe17d?auto=format&fit=crop&q=80&w=800">
+                        <img src="https://images.unsplash.com/photo-1530103862676-fa8c91bbe17d?auto=format&fit=crop&q=80&w=600" alt="Corporate Event Dessert Bar" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Wedding 2 -->
+                <div class="col-md-4 gallery-item weddings">
+                    <div class="gallery-img-wrapper" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=800">
+                        <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=600" alt="Elegant Wedding Display" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Birthday 2 -->
+                <div class="col-md-4 gallery-item birthdays">
+                    <div class="gallery-img-wrapper" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&q=80&w=800">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&q=80&w=600" alt="Kids Birthday Theme" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content border-0 bg-transparent">
+                <div class="modal-body p-0 position-relative text-center">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="" id="lightboxImg" class="img-fluid rounded shadow-lg" alt="Enlarged View">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compact Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-3">
+                    <a href="index.html" class="footer-logo">SweetNest</a>
+                    <p>Luxury Candy Buffets & Dessert Tables for Every Celebration.</p>
+                    <div class="social-links d-flex gap-2 mt-3">
+                        <a href="#" class="text-primary-pink"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-primary-pink"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-primary-pink"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Events</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="themes.html">Themes</a></li>
+                        <li><a href="contact.html">Book-US</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contact</h5>
+                    <p><i class="fas fa-envelope me-2 text-primary-pink"></i> hello@sweetnest.com</p>
+                    <p><i class="fas fa-phone me-2 text-primary-pink"></i> +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0 small text-muted">&copy; 2026 SweetNest. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Lightbox functionality
+        const lightboxModal = document.getElementById('lightboxModal');
+        const lightboxImg = document.getElementById('lightboxImg');
+        
+        lightboxModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const imgSrc = button.getAttribute('data-img');
+            lightboxImg.src = imgSrc;
+        });
+    </script>
+</body>
+</html>

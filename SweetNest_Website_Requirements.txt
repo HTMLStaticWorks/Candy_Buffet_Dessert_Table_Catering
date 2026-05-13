@@ -1,0 +1,334 @@
+
+CANDY BUFFET & DESSERT TABLE CATERING — WEBSITE REQUIREMENTS
+=============================================================
+
+SUGGESTED SIMPLE WEBSITE NAMES
+=============================================================
+
+1. SweetNest
+2. CandyBloom
+3. SugarSprinkle
+4. SweetTable Co.
+5. CandyCraze Events
+6. DessertGlow
+7. SweetMoments
+8. SugarPop Catering
+9. CandyCloud
+10. The Dessert Bar
+
+RECOMMENDED FINAL NAME
+=============================================================
+
+SweetNest
+
+Tagline:
+"Luxury Candy Buffets & Dessert Tables for Every Celebration"
+
+=============================================================
+MAJOR MODIFICATIONS NEEDED FOR THE WEBSITE
+=============================================================
+
+The original master prompt is very generic and corporate-focused.
+For a Candy Buffet & Dessert Table Catering website, the design,
+layout, sections, and branding must be modified heavily to match:
+
+- Event catering industry
+- Party aesthetics
+- Luxury dessert presentation
+- Family-friendly branding
+- Wedding/event audience
+
+=============================================================
+IMPORTANT DESIGN MODIFICATIONS
+=============================================================
+
+1. REMOVE CORPORATE DASHBOARD FEEL
+-------------------------------------------------------------
+
+REMOVE:
+- Analytics cards
+- User management sections
+- Generic admin widgets
+- Technical SaaS-style layout
+
+REPLACE WITH:
+- Event showcase sections
+- Dessert galleries
+- Theme collections
+- Party package displays
+- Instagram-style visuals
+
+=============================================================
+2. USE VISUAL-FIRST DESIGN
+=============================================================
+
+The website must focus heavily on:
+
+- Large dessert images
+- Candy setup photography
+- Elegant event visuals
+- Soft animations
+- Premium party aesthetics
+
+Homepage should include:
+- Full-width hero banner
+- Floating candy elements
+- Dessert showcase cards
+- Event themes
+- Testimonials with event photos
+
+=============================================================
+3. COLOR SYSTEM MODIFICATION
+=============================================================
+
+Instead of corporate blue/gray colors:
+
+USE:
+- Pastel Pink
+- Cream White
+- Gold Accent
+
+Optional Accent Colors:
+- Lavender
+- Peach
+- Soft Mint
+
+The design must feel:
+- Elegant
+- Sweet
+- Luxury
+- Fun
+- Celebration-focused
+
+=============================================================
+4. TYPOGRAPHY MODIFICATION
+=============================================================
+
+Use:
+
+Headings:
+- Poppins
+- Playfair Display
+
+Body:
+- Inter
+- Open Sans
+
+Typography style:
+- Elegant headings
+- Soft rounded buttons
+- Premium spacing
+- Luxury event branding
+
+=============================================================
+5. HOMEPAGE STRUCTURE MODIFICATION
+=============================================================
+
+The homepage should contain:
+
+1. Hero Section
+2. Featured Candy Buffets
+3. Dessert Table Themes
+4. Party Packages
+5. Event Gallery
+6. Testimonials
+7. Instagram Feed
+8. Booking CTA
+9. FAQ
+10. Contact Section
+
+=============================================================
+6. SERVICES PAGE MODIFICATION
+=============================================================
+
+Services should include:
+
+- Candy Buffet Setup
+- Dessert Table Styling
+- Wedding Dessert Displays
+- Kids Birthday Themes
+- Baby Shower Candy Stations
+- Corporate Event Dessert Catering
+- Balloon + Dessert Combo Setup
+
+Each service page must include:
+- Images
+- Pricing
+- Setup details
+- Add-ons
+- FAQ
+- Inquiry button
+
+=============================================================
+7. GALLERY PAGE MODIFICATION
+=============================================================
+
+Gallery is VERY IMPORTANT.
+
+Requirements:
+- Masonry image layout
+- Lightbox popup
+- Category filters
+- Before/after setup photos
+- Event-type filters
+
+Categories:
+- Weddings
+- Birthdays
+- Baby Showers
+- Kids Parties
+- Corporate Events
+
+=============================================================
+8. BOOKING PAGE MODIFICATION
+=============================================================
+
+Booking form should include:
+
+- Event type
+- Event date
+- Guest count
+- Theme selection
+- Venue location
+- Budget range
+- Upload inspiration image
+- Package selection
+
+Add:
+- WhatsApp inquiry button
+- Quick quote CTA
+
+=============================================================
+9. REMOVE UNNECESSARY PAGES
+=============================================================
+
+REMOVE:
+- Login page
+- Register page
+- Corporate dashboard
+- Analytics panels
+
+OPTIONAL:
+- Blog
+- Inspiration gallery
+- Theme collections
+
+=============================================================
+10. ADD EVENT-BASED FEATURES
+=============================================================
+
+IMPORTANT FEATURES:
+
+- Instagram feed integration
+- WhatsApp floating button
+- Online quote request
+- Event package cards
+- Theme showcase carousel
+- Pinterest-style inspiration board
+
+=============================================================
+11. MOBILE EXPERIENCE MODIFICATION
+=============================================================
+
+Since most users book via mobile:
+
+PRIORITIZE:
+- Fast-loading images
+- Sticky booking button
+- Mobile-friendly gallery
+- Tap-friendly buttons
+- Smooth scrolling
+
+=============================================================
+12. SEO MODIFICATION
+=============================================================
+
+Target keywords:
+
+- Candy Buffet Catering
+- Dessert Table Setup
+- Wedding Dessert Catering
+- Birthday Candy Buffet
+- Kids Party Dessert Table
+
+Each page should include:
+- Optimized image alt tags
+- Local SEO
+- Meta descriptions
+- Structured schema
+
+=============================================================
+13. PERFORMANCE MODIFICATION
+=============================================================
+
+Since gallery images are heavy:
+
+USE:
+- Lazy loading
+- WebP images
+- Optimized compression
+- Lightweight animations
+
+=============================================================
+14. RECOMMENDED PAGE STRUCTURE
+=============================================================
+
+/project-root
+
+index.html
+about.html
+services.html
+service-details.html
+gallery.html
+themes.html
+packages.html
+booking.html
+blog.html
+contact.html
+404.html
+
+/assets
+   /css
+   /js
+   /images
+
+=============================================================
+15. FINAL WEBSITE GOAL
+=============================================================
+
+The website must feel:
+
+- Elegant
+- Premium
+- Instagram-worthy
+- Event-focused
+- Family-friendly
+- Visually rich
+- Mobile optimized
+- Booking focused
+
+The final website should help:
+- Generate event inquiries
+- Showcase beautiful setups
+- Build customer trust
+- Increase bookings
+- Improve social sharing
+
+=============================================================
+FINAL RECOMMENDATION
+=============================================================
+
+Best Name:
+SweetNest
+
+Best Style:
+Luxury pastel event website
+
+Best Platform:
+Bootstrap 5 + Vanilla JavaScript
+
+Best Focus:
+Visual gallery + easy booking flow
+
+Main Conversion Goal:
+Event inquiry submissions

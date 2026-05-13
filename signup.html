@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | SweetNest</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .auth-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--soft-pink);
+            padding: 20px;
+        }
+        .auth-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="text-center mb-5">
+                <a href="index.html" class="footer-logo">SweetNest</a>
+                <h2 class="mt-3">Join SweetNest</h2>
+                <p class="text-muted">Create an account to start planning your event</p>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="Jane">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="jane@example.com">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="••••••••">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="••••••••">
+                </div>
+                <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    <label class="form-check-label small" for="terms">I agree to the <a href="#" class="text-primary-pink">Terms & Conditions</a> and <a href="#" class="text-primary-pink">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="btn-luxury w-100 py-3 mb-4">Sign Up</button>
+                <div class="text-center">
+                    <p class="small text-muted">Already have an account? <a href="login.html" class="text-primary-pink fw-bold text-decoration-none">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
