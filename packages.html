@@ -36,7 +36,7 @@
 
         .package-header {
             background-color: var(--soft-orange);
-            padding: 40px 20px;
+            padding: 50px 20px 40px; /* Increased top padding to avoid badge overlap */
             text-align: center;
         }
 
@@ -64,17 +64,17 @@
 
         .popular-badge {
             position: absolute;
-            top: 20px;
-            right: -35px;
+            top: 15px;
+            right: -40px;
             background: linear-gradient(135deg, #FF7F50 0%, #D2691E 100%);
             color: white;
-            width: 180px;
+            width: 150px;
             text-align: center;
             padding: 5px 0;
             transform: rotate(45deg);
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 700;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-transform: uppercase;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             z-index: 15;

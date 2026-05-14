@@ -478,6 +478,22 @@ body {
     display: block;
 }
 
+.hero .btn-luxury-outline,
+.hero-2 .btn-luxury-outline,
+.package-inspiration .btn-luxury-outline {
+    background-color: #FFFFFF; /* White background for better visibility */
+    color: var(--primary-orange);
+    border-color: #FFFFFF;
+}
+
+.hero .btn-luxury-outline:hover,
+.hero-2 .btn-luxury-outline:hover,
+.package-inspiration .btn-luxury-outline:hover {
+    background-color: var(--primary-orange);
+    color: #FFFFFF;
+    border-color: var(--primary-orange);
+}
+
 @media (max-width: 991.98px) { /* For tablets and mobile devices */
     .hero {
         padding-top: 80px; /* Adjust based on navbar height */
@@ -486,8 +502,24 @@ body {
     .hero-content {
         text-align: center; /* Center content on smaller screens */
     }
-    .hero-content .d-flex {
-        justify-content: center; /* Center buttons on smaller screens */
+    .hero-content .d-flex,
+    .hero-2 .d-flex.gap-3,
+    .package-inspiration .d-flex {
+        justify-content: center !important; /* Center buttons on smaller screens */
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+        gap: 15px !important; /* Ensure consistent vertical gap */
+        margin-bottom: 40px; /* Added gap to prevent overlap with image below */
+    }
+    
+    .hero-content .btn-luxury,
+    .hero-content .btn-luxury-outline,
+    .hero-2 .btn-luxury,
+    .hero-2 .btn-luxury-outline,
+    .package-inspiration .btn-luxury,
+    .package-inspiration .btn-luxury-outline {
+        width: 100%;
+        max-width: 280px; /* Consistent width for stacked buttons */
     }
 }
 
