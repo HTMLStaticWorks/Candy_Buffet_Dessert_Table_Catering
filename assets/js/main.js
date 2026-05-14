@@ -75,8 +75,29 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Initial check
 
-    // 4. WhatsApp Inquiry Handler (Example)
+    // 4. WhatsApp & Back to Top Handler
     const whatsappBtn = document.querySelector('.whatsapp-float');
+    const backToTopBtn = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (backToTopBtn) {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        }
+    });
+
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
     if (whatsappBtn) {
         whatsappBtn.addEventListener('click', (e) => {
             // e.preventDefault();
