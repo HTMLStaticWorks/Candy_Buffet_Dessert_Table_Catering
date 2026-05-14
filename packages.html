@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Packages | SweetNest - Pricing & Details</title>
-    
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <style>
         .package-card {
             border: none;
@@ -27,21 +28,25 @@
             flex-direction: column;
             height: 100%;
         }
+
         .package-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-hover);
         }
+
         .package-header {
-            background-color: var(--soft-pink);
+            background-color: var(--soft-orange);
             padding: 40px 20px;
             text-align: center;
         }
+
         .package-price {
             font-family: var(--font-heading);
             font-size: 3rem;
-            color: var(--primary-pink);
+            color: var(--primary-orange);
             margin-bottom: 0;
         }
+
         .package-body {
             padding: 40px 30px;
             background-color: var(--card-bg);
@@ -51,22 +56,28 @@
             align-items: center;
             text-align: center;
         }
+
         .package-body .btn-luxury,
         .package-body .btn-luxury-outline {
             margin-top: auto;
         }
+
         .popular-badge {
             position: absolute;
             top: 20px;
             right: -35px;
-            background-color: var(--gold);
+            background: linear-gradient(135deg, #FF7F50 0%, #D2691E 100%);
             color: white;
-            padding: 5px 40px;
+            width: 180px;
+            text-align: center;
+            padding: 5px 0;
             transform: rotate(45deg);
-            font-size: 0.8rem;
-            font-weight: bold;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            z-index: 1;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 15;
         }
     </style>
     <!-- Favicon -->
@@ -76,7 +87,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.png" alt="SweetNest Logo">
@@ -113,7 +124,7 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header" style="background-color: var(--primary-pink); margin-top: 0;">
+    <section class="page-header" style="background-color: var(--primary-orange); margin-top: 0;">
         <div class="container text-center py-5 text-white">
             <h1 class="display-3 text-white">Party Packages</h1>
             <p class="lead">Curated collections to fit every celebration size and budget.</p>
@@ -135,11 +146,16 @@
                         </div>
                         <div class="package-body">
                             <ul class="list-unstyled mb-5">
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 6 Varieties of Premium Candy</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Rental of Luxury Glassware</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Themed Linen & Decor</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Custom Candy Labels</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Delivery, Setup & Cleanup</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> 6 Varieties of
+                                    Premium Candy</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Rental of Luxury
+                                    Glassware</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Themed Linen &
+                                    Decor</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Custom Candy
+                                    Labels</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Delivery, Setup &
+                                    Cleanup</li>
                                 <li class="mb-3 text-muted"><del>Artisan Petite Desserts</del></li>
                             </ul>
                             <a href="contact.html" class="btn-luxury-outline w-100">Select Package</a>
@@ -149,9 +165,9 @@
 
                 <!-- Package 2 -->
                 <div class="col-lg-4">
-                    <div class="package-card h-100 border border-primary-pink">
-                        <div class="popular-badge">Most Popular</div>
-                        <div class="package-header" style="background-color: var(--primary-pink); color: white;">
+                    <div class="package-card h-100 border border-primary-orange">
+                        <div class="popular-badge">Popular</div>
+                        <div class="package-header" style="background-color: var(--primary-orange); color: white;">
                             <h3 class="text-white">The Sweeter Soirée</h3>
                             <p class="text-white-50">Our most popular choice</p>
                             <p class="package-price text-white">$899</p>
@@ -159,12 +175,18 @@
                         </div>
                         <div class="package-body">
                             <ul class="list-unstyled mb-5">
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 10 Varieties of Premium Candy</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 3 Types of Artisan Desserts</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Custom Themed Backdrop</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Floral Table Arrangements</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Menu Signage & Decor</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Delivery, Setup & Cleanup</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> 10 Varieties of
+                                    Premium Candy</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> 3 Types of
+                                    Artisan Desserts</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Custom Themed
+                                    Backdrop</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Floral Table
+                                    Arrangements</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Menu Signage &
+                                    Decor</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Delivery, Setup &
+                                    Cleanup</li>
                             </ul>
                             <a href="contact.html" class="btn-luxury w-100">Select Package</a>
                         </div>
@@ -182,12 +204,18 @@
                         </div>
                         <div class="package-body">
                             <ul class="list-unstyled mb-5">
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 15 Varieties of Premium Candy</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> 6 Types of Artisan Desserts</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Premium Personalized Props</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Professional Table Attendant</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Take-home Favor Boxes</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary-pink me-2"></i> Priority Delivery & Setup</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> 15 Varieties of
+                                    Premium Candy</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> 6 Types of
+                                    Artisan Desserts</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Premium
+                                    Personalized Props</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Professional
+                                    Table Attendant</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Take-home Favor
+                                    Boxes</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary-orange me-2"></i> Priority Delivery
+                                    & Setup</li>
                             </ul>
                             <a href="contact.html" class="btn-luxury-outline w-100">Select Package</a>
                         </div>
@@ -201,7 +229,8 @@
     <section class="py-5 bg-light">
         <div class="container text-center py-5">
             <h2 class="mb-4">Need a Custom Package?</h2>
-            <p class="lead mb-5">We can create a bespoke experience for events of any size, from 10 to 1,000+ guests.</p>
+            <p class="lead mb-5">We can create a bespoke experience for events of any size, from 10 to 1,000+ guests.
+            </p>
             <a href="contact.html" class="btn-luxury">Request a Custom Quote</a>
         </div>
     </section>
@@ -216,34 +245,34 @@
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="luxury-card p-4 text-center h-100">
-                        <i class="fas fa-camera fa-2x text-primary-pink mb-3"></i>
+                        <i class="fas fa-camera fa-2x text-primary-orange mb-3"></i>
                         <h5>Photo Booth</h5>
                         <p class="small">Capture the fun with a themed backdrop and props.</p>
-                        <p class="text-primary-pink fw-bold">From $200</p>
+                        <p class="text-primary-orange fw-bold">From $200</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="luxury-card p-4 text-center h-100">
-                        <i class="fas fa-utensils fa-2x text-primary-pink mb-3"></i>
+                        <i class="fas fa-utensils fa-2x text-primary-orange mb-3"></i>
                         <h5>Personalized Sweets</h5>
                         <p class="small">Custom cookies and treats with your name or logo.</p>
-                        <p class="text-primary-pink fw-bold">From $150</p>
+                        <p class="text-primary-orange fw-bold">From $150</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="luxury-card p-4 text-center h-100">
-                        <i class="fas fa-wine-glass-alt fa-2x text-primary-pink mb-3"></i>
+                        <i class="fas fa-wine-glass-alt fa-2x text-primary-orange mb-3"></i>
                         <h5>Drink Station</h5>
                         <p class="small">Mocktails or themed drinks to match your table.</p>
-                        <p class="text-primary-pink fw-bold">From $250</p>
+                        <p class="text-primary-orange fw-bold">From $250</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="luxury-card p-4 text-center h-100">
-                        <i class="fas fa-clock fa-2x text-primary-pink mb-3"></i>
+                        <i class="fas fa-clock fa-2x text-primary-orange mb-3"></i>
                         <h5>Extended Rental</h5>
-                        <p class="small">Keep the table open for longer celebrations.</p>
-                        <p class="text-primary-pink fw-bold">From $100/hr</p>
+                        <p class="small">Keep the table open for a longer celebrations.</p>
+                        <p class="text-primary-orange fw-bold">From $100/hr</p>
                     </div>
                 </div>
             </div>
@@ -253,14 +282,10 @@
     <!-- Package Examples Gallery -->
     <section class="package-gallery py-5 bg-light">
         <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-md-8">
-                    <h2 class="display-5">Real Package Examples</h2>
-                    <p class="lead">See what our different package tiers look like in reality.</p>
-                </div>
-                <div class="col-md-4 text-md-end">
-                    <a href="gallery.html" class="btn-luxury-outline">Full Gallery</a>
-                </div>
+            <div class="text-center mb-5">
+                <h2 class="display-5">Real Package Examples</h2>
+                <p class="lead mb-4">See what our different package tiers look like in reality.</p>
+                <a href="gallery.html" class="btn-luxury-outline">Full Gallery</a>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
@@ -274,7 +299,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="luxury-card overflow-hidden border-primary-pink">
+                    <div class="luxury-card overflow-hidden border-primary-orange">
                         <div class="luxury-card-img">
                             <img src="assets/images/service-dessert.jpg" alt="Sweeter Soiree Example" class="img-fluid">
                         </div>
@@ -286,7 +311,8 @@
                 <div class="col-md-4">
                     <div class="luxury-card overflow-hidden">
                         <div class="luxury-card-img">
-                            <img src="assets/images/service-wedding.jpg" alt="Sweetest Luxury Example" class="img-fluid">
+                            <img src="assets/images/service-wedding.jpg" alt="Sweetest Luxury Example"
+                                class="img-fluid">
                         </div>
                         <div class="p-3 text-center">
                             <h6>The Sweetest Luxury</h6>
@@ -307,9 +333,9 @@
                     </a>
                     <p>Luxury Candy Buffets & Dessert Tables for Every Celebration.</p>
                     <div class="social-links d-flex gap-2 mt-3">
-                        <a href="#" class="text-primary-pink"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-primary-pink"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-primary-pink"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-primary-orange"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-primary-orange"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-primary-orange"><i class="fab fa-pinterest"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2">
@@ -332,8 +358,8 @@
                 </div>
                 <div class="col-lg-3">
                     <h5>Contact</h5>
-                    <p><i class="fas fa-envelope me-2 text-primary-pink"></i> hello@sweetnest.com</p>
-                    <p><i class="fas fa-phone me-2 text-primary-pink"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope me-2 text-primary-orange"></i> hello@sweetnest.com</p>
+                    <p><i class="fas fa-phone me-2 text-primary-orange"></i> +1 234 567 890</p>
                 </div>
             </div>
             <div class="footer-bottom text-center">
@@ -351,4 +377,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
