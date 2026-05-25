@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book-US | SweetNest - Luxury Catering & Inquiries</title>
-    <meta name="description" content="Book your luxury candy buffet or dessert table. Contact SweetNest for inquiries and custom event styling.">
-    
+    <meta name="description"
+        content="Book your luxury candy buffet or dessert table. Contact SweetNest for inquiries and custom event styling.">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- Leaflet Map CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
     <style>
         .booking-form-container {
             background-color: var(--card-bg);
@@ -26,6 +29,7 @@
             padding: 40px;
             border: 1px solid rgba(255, 127, 80, 0.2);
         }
+
         .info-card {
             background-color: var(--soft-orange);
             border-radius: 20px;
@@ -41,13 +45,16 @@
             box-shadow: var(--shadow-soft);
             z-index: 1;
         }
+
         .map-section {
             background-color: var(--bg-light);
         }
+
         .leaflet-popup-content-wrapper {
             border-radius: 12px;
             font-family: var(--font-subheading);
         }
+
         .leaflet-popup-content h6 {
             margin-bottom: 5px;
             color: var(--gold);
@@ -59,6 +66,7 @@
             align-items: center;
             justify-content: center;
         }
+
         .marker-pin {
             width: 30px;
             height: 30px;
@@ -70,8 +78,9 @@
             top: 50%;
             margin: -15px 0 0 -15px;
             border: 2px solid #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
+
         .marker-pin::after {
             content: '';
             width: 14px;
@@ -81,6 +90,7 @@
             position: absolute;
             border-radius: 50%;
         }
+
         .marker-pulse {
             position: absolute;
             top: 50%;
@@ -93,9 +103,17 @@
             opacity: 0.4;
             animation: pulse 2s infinite;
         }
+
         @keyframes pulse {
-            0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.8; }
-            100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+            0% {
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(2.5);
+                opacity: 0;
+            }
         }
     </style>
     <!-- Favicon -->
@@ -197,7 +215,8 @@
                                 </div>
                                 <div class="col-md-12">
                                     <label class="form-label">Your Message / Vision</label>
-                                    <textarea class="form-control" rows="4" placeholder="Tell us more about your event or specific questions you have."></textarea>
+                                    <textarea class="form-control" rows="4"
+                                        placeholder="Tell us more about your event or specific questions you have."></textarea>
                                 </div>
                                 <div class="col-md-12 mt-4">
                                     <button type="submit" class="btn-luxury w-100 py-3 fs-5">Send Inquiry</button>
@@ -211,8 +230,9 @@
                 <div class="col-lg-4">
                     <div class="info-card">
                         <h3 class="mb-4 text-center">Get In Touch</h3>
-                        <p class="mb-5 text-muted text-center">Prefer to chat directly? Reach out to us through any of these channels.</p>
-                        
+                        <p class="mb-5 text-muted text-center">Prefer to chat directly? Reach out to us through any of
+                            these channels.</p>
+
                         <div class="d-flex mb-4">
                             <div class="me-3 fs-4 text-primary-orange">
                                 <i class="fas fa-envelope"></i>
@@ -240,14 +260,17 @@
                             <div>
                                 <h5>WhatsApp</h5>
                                 <p class="text-muted">Chat with our stylist instantly</p>
-                                <a href="https://wa.me/1234567890" class="btn btn-sm btn-success rounded-pill px-3">Start Chat</a>
+                                <a href="https://wa.me/1234567890"
+                                    class="btn btn-sm btn-success rounded-pill px-3">Start Chat</a>
                             </div>
                         </div>
 
                         <hr class="my-4">
 
                         <h4 class="mb-3 text-center">Our Studio</h4>
-                        <p class="text-muted small text-center"><i class="fas fa-map-marker-alt me-2 text-primary-orange"></i> 123 Sweet Street, Candy City, ST 12345</p>
+                        <p class="text-muted small text-center"><i
+                                class="fas fa-map-marker-alt me-2 text-primary-orange"></i> 123 Sweet Street, Candy
+                            City, ST 12345</p>
                     </div>
                 </div>
             </div>
@@ -260,7 +283,8 @@
             <div class="row mb-5 text-center">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="display-5 mb-3">Find Our Studios</h2>
-                    <p class="text-muted">We have multiple locations across the city to serve you better. Visit us at our nearest boutique studio.</p>
+                    <p class="text-muted">We have multiple locations across the city to serve you better. Visit us at
+                        our nearest boutique studio.</p>
                 </div>
             </div>
             <div class="row">
@@ -317,20 +341,23 @@
             </div>
             <div class="row g-3">
                 <div class="col-md-4">
-                    <img src="https://images.unsplash.com/photo-1514845555132-05459f0f9e15?q=80&w=800&auto=format&fit=crop" alt="Inspiration" class="img-fluid rounded-4 shadow-sm">
+                    <img src="assets/images/gallery_extra_1.png" alt="Inspiration"
+                        class="img-fluid rounded-4 shadow-sm">
                 </div>
                 <div class="col-md-4">
-                    <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=800&auto=format&fit=crop" alt="Inspiration" class="img-fluid rounded-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=800&auto=format&fit=crop"
+                        alt="Inspiration" class="img-fluid rounded-4 shadow-sm">
                 </div>
                 <div class="col-md-4">
-                    <img src="https://images.unsplash.com/photo-1582293041079-7814c2f12063?q=80&w=800&auto=format&fit=crop" alt="Inspiration" class="img-fluid rounded-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1582293041079-7814c2f12063?q=80&w=800&auto=format&fit=crop"
+                        alt="Inspiration" class="img-fluid rounded-4 shadow-sm">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Compact Footer -->
-    <footer>
+    <footer class="index-footer-dark">
         <div class="container">
             <div class="row g-4 justify-content-between">
                 <div class="col-lg-3">
@@ -384,12 +411,13 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Leaflet Map JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Initialize the map
             // Centered around New York coordinates as an example
             const map = L.map('map').setView([40.730610, -73.935242], 12);
@@ -453,4 +481,5 @@
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
