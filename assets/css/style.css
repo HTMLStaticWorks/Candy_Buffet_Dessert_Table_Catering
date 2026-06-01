@@ -3,7 +3,7 @@
    Design System: Luxury Pastel
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
     --primary-orange: #FF7F50;
@@ -17,12 +17,12 @@
     --bg-light: #FFF0E0;
     --card-bg: #FFFBF5;
     --navbar-bg: #FFFBF5;
-    --hero-overlay: rgba(255, 255, 255, 0.9);
+    --hero-overlay: rgba(255, 255, 255, 0.5);
     --cta-overlay: rgba(255, 127, 80, 0.85);
 
-    --font-heading: 'Playfair Display', serif;
+    --font-heading: 'Poppins', sans-serif;
     --font-subheading: 'Poppins', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-body: 'Poppins', sans-serif;
 
     --transition: all 0.3s ease;
     --shadow-soft: 0 10px 30px rgba(255, 127, 80, 0.2);
@@ -44,7 +44,7 @@
     --bg-light: #1A1A1A;
     --card-bg: #242424;
     --navbar-bg: #121212;
-    --hero-overlay: rgba(18, 18, 18, 0.9);
+    --hero-overlay: rgba(18, 18, 18, 0.5);
     --cta-overlay: rgba(54, 28, 0, 0.9);
     --shadow-soft: 0 10px 30px rgba(255, 140, 0, 0.2);
     --shadow-hover: 0 15px 40px rgba(255, 140, 0, 0.4);
@@ -72,6 +72,7 @@
 .lead {
     color: var(--text-dark);
     opacity: 0.9;
+    font-weight: 500;
 }
 
 .bg-light {
@@ -287,8 +288,18 @@ h4,
 h5,
 h6 {
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: 300;
     color: var(--text-dark);
+}
+
+h2 {
+    font-size: calc(1.425rem + 2.1vw);
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 3rem;
+    }
 }
 
 .heading-poppins {
@@ -505,6 +516,13 @@ body {
     background-position: center;
     position: relative;
     overflow: hidden;
+}
+
+.hero h1,
+.hero-2 h1,
+.page-header h1,
+.auth-image-content h1 {
+    font-weight: 700;
 }
 
 .hero-content h1 {
